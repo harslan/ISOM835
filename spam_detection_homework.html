@@ -82,6 +82,9 @@
             font-size: 1.3em;
             margin-bottom: 15px;
         }
+        .reveal a {
+            color: var(--r-link-color);
+        }
     </style>
 </head>
 <body>
@@ -114,6 +117,25 @@
                     <li>capital_run_length_total: Total number of capital letters in the email</li>
                     <li>spam: Target variable (1 for spam, 0 for non-spam)</li>
                 </ul>
+            </section>
+
+            <section>
+                <h2>Accessing the Dataset</h2>
+                <div class="task-section">
+                    <p>The dataset for this assignment (spam_data.csv) is available in the course GitHub repository. To access it:</p>
+                    <ol>
+                        <li>Go to <a href="https://github.com/harslan/ISOM835" target="_blank">https://github.com/harslan/ISOM835</a></li>
+                        <li>Click on the "spam_data.csv" file</li>
+                        <li>Click the "Raw" button to view the raw CSV data</li>
+                        <li>Right-click and select "Save As" to download the file, or copy the URL to use directly in your code</li>
+                    </ol>
+                    <p>In your Google Colab notebook, you can load the data directly from GitHub using:</p>
+                    <pre><code>
+import pandas as pd
+url = 'https://raw.githubusercontent.com/harslan/ISOM835/main/spam_data.csv'
+df = pd.read_csv(url)
+                    </code></pre>
+                </div>
             </section>
 
             <section>
